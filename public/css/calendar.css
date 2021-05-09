@@ -1,0 +1,135 @@
+.titre {
+    text-align: center;
+}
+
+.calendar {
+    position: relative;
+}
+
+.calendar__table {
+    width: 100%;
+    height: calc(100vh - 128px);
+}
+
+.calendar__table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+    width: 14.29%;
+    height: 20%;
+}
+
+.calendar__table td.is-today {
+    background-color: #e7e7e7;
+}
+
+.calendar__table--6weeks td {
+    height: 16.66%;
+}
+
+.calendar__weekday {
+    color: black;
+    font-size: 28px;
+}
+
+.calendar__day {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: black;
+}
+
+.calendar__day:hover {
+    color: grey;
+}
+
+.calendar__othermonth .calendar__day {
+    opacity: 0.3;
+}
+
+.calendar__button {
+    display: block;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: à 6px 10px 0 #0000001a, 0 1px 18px #0000001a, 0 3px 5px -1px #0003;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.calendar__button:hover {
+    transform: scale(1.2);
+    color: white;
+}
+
+card {
+    margin-bottom: 50px;
+    border: none
+}
+
+.box {
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #191919;
+    text-align: center;
+    transition: 0.25s;
+    margin-top: 100px
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid white;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s
+}
+
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 300px;
+    border-color: red
+}
+
+.box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid white;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
+.box input[type="submit"]:hover {
+    background: white;
+}
